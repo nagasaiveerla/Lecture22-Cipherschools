@@ -1,0 +1,57 @@
+//Strings
+public class StringStudy{
+    public static void main(String args[])
+    {
+        String name = "cipherschools";//created using string literals -stored in method area
+        String name2="cipherschools";
+
+        String name3= new String ("cipherschools");//creating string using constructors
+        String name4= new String ("cipherschools");
+
+        System.out.println(name=name2);//== operator compares references for objects and values for primitive date types
+       System.out.println(name3==name4);
+       System.out.println(name=name3);
+       //string are immutable
+       //everytime we do operation on a string ,a new object is created.
+       //1.concatination 
+       String s1="hello";
+       s1=s1+"peeps";
+       System.out.println(s1);
+       System.out.println(s1+"how are you doing");
+       System.out.println(s1);
+       //another way to concat is to use function
+       String s2=new String ("hello");
+       String s3=new String ("people");
+       String s4=s2.concat(s3);
+       System.out.println(s4);
+       System.out.println(s2);//remain same
+
+      System.out.println("============================");
+      System.out.println("2.checking if string are equal in value");
+      //2.checking if string are equal in value
+
+      System.out.println(name.equals(name2));
+      //equals function ->object class.
+      //this generally compares references (hashcodes) of objects (just like ==)
+      //but,for string class it has overridden to check for content equality
+
+
+
+       //3.creatin new String object from character array
+       char arr[]={'c','i','p','h','r'};
+       String strFromArr= new String(arr);//constructor overloaded
+       System.out.println(strFromArr);
+
+
+
+       //strings
+       //we work with objects of string class
+        /*string can be created in two ways
+        1.string leterals
+        2.constructors*/
+     //string objects are immutable.;->
+
+      2.constructors
+
+    }
+}
